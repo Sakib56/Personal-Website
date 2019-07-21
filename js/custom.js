@@ -1,16 +1,16 @@
 ;
-(function($, window, document, undefined) {
+(function ($, window, document, undefined) {
     'use strict';
-    var $winW = function() {
+    var $winW = function () {
         return $(window).width();
     };
-    var $winH = function() {
+    var $winH = function () {
         return $(window).height();
     };
-    var $screensize = function(element) {
+    var $screensize = function (element) {
         $(element).width($winW()).height($winH());
     };
-    var screencheck = function(mediasize) {
+    var screencheck = function (mediasize) {
         if (typeof window.matchMedia !== "undefined") {
             var screensize = window.matchMedia("(max-width:" + mediasize + "px)");
             if (screensize.matches) {
@@ -26,17 +26,17 @@
             }
         }
     };
-    $(document).ready(function() {
-        $(window).on('load', function() {
+    $(document).ready(function () {
+        $(window).on('load', function () {
             $('.preloader').fadeOut();
-            $('.animated-row').each(function() {
+            $('.animated-row').each(function () {
                 var $this = $(this);
-                $this.find('.animate').each(function(i) {
+                $this.find('.animate').each(function (i) {
                     var $item = $(this);
                     var animation = $item.data('animate');
-                    $item.on('inview', function(event, isInView) {
+                    $item.on('inview', function (event, isInView) {
                         if (isInView) {
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 $item.addClass('animated ' + animation).removeClass('animate');
                             }, i * 50);
                         } else if (!screencheck(767)) {
@@ -53,7 +53,7 @@
                 dots: true,
                 items: 3,
                 margin: 30,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
                 responsive: {
@@ -83,7 +83,7 @@
                 dots: true,
                 items: 3,
                 margin: 30,
-                autoplay: false,
+                autoplay: true,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
                 responsive: {
@@ -114,7 +114,7 @@
                 items: 3,
                 autoplay: true,
                 smartSpeed: 700,
-                autoplayTimeout: 4000,
+                autoplayTimeout: 6000,
                 responsive: {
                     0: {
                         items: 1,
@@ -166,36 +166,36 @@
                 responsiveSlides: true
             });
         }
-        $(document).on('click', '.navbar-toggle', function() {
+        $(document).on('click', '.navbar-toggle', function () {
             $('.navbar-collapse').slideToggle(300);
             return false;
-        }).on('click', '.navigation-menu > li > a', function() {
+        }).on('click', '.navigation-menu > li > a', function () {
             $('.navbar-collapse').slideUp(300);
-        }).on('click', '.next-section', function() {
+        }).on('click', '.next-section', function () {
             fullpage_api.moveSectionDown();
         });
-        $('.facts-row').on('inview', function(event, isInView) {
-            $('.count-number').each(function() {
+        $('.facts-row').on('inview', function (event, isInView) {
+            $('.count-number').each(function () {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function(now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-                setTimeout(function() {
+                        duration: 1000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                setTimeout(function () {
                     $('.count-number').removeClass('count-number').addClass('counted');
                 }, 1000);
             });
         });
-        $('.skills-row').on('inview', function(event, isInView) {
+        $('.skills-row').on('inview', function (event, isInView) {
             $(this).addClass('view');
         });
-        $(document).on('click', '.menu-trigger', function() {
+        $(document).on('click', '.menu-trigger', function () {
             $('body').toggleClass('sidemenu-open');
-        }).on('click', '.side-menu .navbar-nav li a', function() {
+        }).on('click', '.side-menu .navbar-nav li a', function () {
             $('body').removeClass('sidemenu-open');
         });
     });
