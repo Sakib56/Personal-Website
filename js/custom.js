@@ -48,14 +48,14 @@
         });
         if ($('.facts-list').length) {
             $('.facts-list').owlCarousel({
-                loop: true,
-                nav: false,
-                dots: true,
+                // loop: false,
+                // nav: false,
+                dots: false,
                 items: 3,
                 margin: 30,
-                autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                // autoplay: false,
+                // smartSpeed: 700,
+                // autoplayTimeout: 6000,
                 responsive: {
                     0: {
                         items: 1,
