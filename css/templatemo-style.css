@@ -446,7 +446,8 @@ a#logo {
 
 .welcome-first {
   font-size: 32px;
-  display: block;
+  display: inline;
+  padding-left: 0.3em;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.2;
