@@ -79,11 +79,11 @@
         if ($('.services-list').length) {
             $('.services-list').owlCarousel({
                 loop: true,
-                nav: false,
+                // nav: false,
                 dots: true,
                 items: 3,
                 margin: 30,
-                autoplay: true,
+                // autoplay: true,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
                 responsive: {
@@ -108,8 +108,8 @@
         }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
-                loop: false,
-                nav: false,
+                // loop: false,
+                // nav: false,
                 dots: true,
                 items: 3,
                 autoplay: true,
@@ -134,7 +134,7 @@
         if ($('.testimonials-slider').length) {
             $('.testimonials-slider').owlCarousel({
                 loop: true,
-                nav: false,
+                // nav: false,
                 dots: true,
                 items: 1,
                 margin: 30,
