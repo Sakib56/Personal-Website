@@ -73,7 +73,6 @@
         }
         if ($('.services-list').length) {
             $('.services-list').owlCarousel({
-                loop: true,
                 dots: true,
                 items: 3,
                 autoplay: true,
