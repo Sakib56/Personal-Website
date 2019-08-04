@@ -596,9 +596,8 @@ a#logo {
 .services-list .item {
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  /* -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;  */
-
+  /* -webkit-transition: all 0.5s ease; */
+  transition: all 0.5s ease;  
   overflow: hidden;
   text-align: center;
   width: 100%;
