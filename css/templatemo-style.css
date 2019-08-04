@@ -594,17 +594,10 @@ a#logo {
 }
 
 .services-list .item {
-  /* background-color: rgba(250, 250, 250, 0.25); */
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  -webkit-transition: all 0.5s ease;
+  /* -webkit-transition: all 0.5s ease; */
   transition: all 0.5s ease;
-
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-  font-size: 14px;
-  background: rgba(0, 0, 0, 0.25);
 }
 
 .service-icon {
@@ -869,7 +862,7 @@ textarea.form-control {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 30px;
-  background: rgba(250, 250, 250, 0.25);
+  background: rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 30px;
   font-weight: 700;
@@ -890,7 +883,7 @@ textarea.form-control {
 ================================================*/
 
 .testimonials-section .item {
-  background-color: rgba(250, 250, 250, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 40px;
   border-radius: 10px;
 }
@@ -961,7 +954,7 @@ textarea.form-control {
   width: 70%;
   height: 6px;
   border-radius: 3px;
-  background-color: rgba(250, 250, 250, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   position: relative;
 }
 
