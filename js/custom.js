@@ -50,6 +50,7 @@
             $('.facts-list').owlCarousel({
                 dots: true,
                 items: 3,
+                smartSpeed: 700,
                 margin: 30,
                 responsive: {
                     0: {
