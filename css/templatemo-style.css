@@ -913,6 +913,11 @@ textarea.form-control {
   font-style: italic;
 }
 
+.testimonials-section .item:hover {
+  background: #fff;
+  color: #1e1e1e;
+}
+
 /*==============================================
 10. SKILLS BLOCK CSS
 ================================================*/
