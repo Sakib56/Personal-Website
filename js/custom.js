@@ -50,7 +50,7 @@
             $('.facts-list').owlCarousel({
                 dots: true,
                 items: 3,
-                smartSpeed: 700,
+                // smartSpeed: 700,
                 margin: 30,
                 responsive: {
                     0: {
@@ -74,11 +74,12 @@
         }
         if ($('.services-list').length) {
             $('.services-list').owlCarousel({
+                loop: true,
                 dots: true,
                 items: 3,
                 autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                // smartSpeed: 700,
+                autoplayTimeout: 8000,
                 responsive: {
                     0: {
                         items: 1,
@@ -97,12 +98,12 @@
         }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
-                // loop: false,
+                loop: true,
                 dots: true,
                 items: 3,
                 autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                // smartSpeed: 700,
+                autoplayTimeout: 8000,
                 responsive: {
                     0: {
                         items: 1,
@@ -126,8 +127,8 @@
                 items: 1,
                 margin: 30,
                 autoplay: true,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
+                // smartSpeed: 700,
+                autoplayTimeout: 8000,
                 responsive: {
                     0: {
                         items: 1,
