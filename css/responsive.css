@@ -173,11 +173,7 @@
 		display: flex;
 		width: 100%;
 	}
-	#ajax-contact {
-		margin-top: 20px;
-	}
-	#ajax-contact input {
-		margin-bottom: 20px;
+	
 	}
 	.contact-row i {
 		font-size: 25px;
