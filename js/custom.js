@@ -77,30 +77,6 @@
                 loop: true,
                 dots: true,
                 items: 3,
-                autoplay: true,
-                smartSpeed: 500,
-                autoplayTimeout: 8000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0
-                    },
-                    576: {
-                        items: 2,
-                        margin: 20
-                    },
-                    992: {
-                        items: 3,
-                        margin: 30
-                    }
-                }
-            });
-        }
-        if ($('.gallery-list').length) {
-            $('.gallery-list').owlCarousel({
-                // loop: true,
-                dots: true,
-                items: 3,
                 // autoplay: true,
                 smartSpeed: 500,
                 // autoplayTimeout: 8000,
@@ -120,15 +96,43 @@
                 }
             });
         }
+        if ($('.gallery-list').length) {
+            $('.gallery-list').owlCarousel({
+                loop: true,
+                dots: true,
+                items: 3,
+                // autoplay: true,
+                smartSpeed: 500,
+                // autoplayTimeout: 8000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0
+                    },
+                    460: {
+                        items: 2,
+                        margin: 10
+                    },
+                    576: {
+                        items: 3,
+                        margin: 20
+                    },
+                    992: {
+                        items: 4,
+                        margin: 30
+                    }
+                }
+            });
+        }
         if ($('.testimonials-slider').length) {
             $('.testimonials-slider').owlCarousel({
                 loop: true,
                 dots: true,
                 items: 1,
                 margin: 30,
-                autoplay: true,
+                // autoplay: true,
                 smartSpeed: 500,
-                autoplayTimeout: 8000,
+                // autoplayTimeout: 8000,
                 responsive: {
                     0: {
                         items: 1,
