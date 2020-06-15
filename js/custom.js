@@ -128,7 +128,7 @@
             $('.testimonials-slider').owlCarousel({
                 loop: true,
                 dots: true,
-                items: 1,
+                items: 3,
                 margin: 30,
                 // autoplay: true,
                 smartSpeed: 500,
@@ -138,8 +138,13 @@
                         items: 1,
                         margin: 0
                     },
-                    768: {
-                        items: 1
+                    576: {
+                        items: 2,
+                        margin: 20
+                    },
+                    992: {
+                        items: 3,
+                        margin: 30
                     }
                 }
             });
